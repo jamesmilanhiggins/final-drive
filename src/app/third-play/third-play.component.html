@@ -13,9 +13,6 @@
 <h3>What will you do on your next play?</h3>
 
 
-
-
-
 <div *ngIf="(playToDisplay | async)?.$key == 5">
   <div *ngFor="let play of plays | async">
     <div *ngIf="play.$key == 10" class="panel panel-default">
@@ -59,59 +56,3 @@
     </div>
   </div>
 </div>
-
-
-
-<!-- <div *ngIf="(playToDisplay | async)?.pass != undefined">
-  <div *ngFor="let play of plays | async">
-    <div *ngIf="play.$key == 10" class="panel panel-default">
-      <a (click)="goToDetailPage(play)">Pass</a>
-    </div>
-    <div *ngIf="play.$key == 6" class="panel panel-default">
-      <a (click)="goToDetailPage(play)">Run</a>
-    </div>
-  </div>
-</div>
-<div *ngIf="(playToDisplay | async)?.run != undefined">
-  <div *ngFor="let play of plays | async">
-    <div *ngIf="play.$key == 10" class="panel panel-default">
-      <a (click)="goToDetailPage(play)">Pass</a>
-    </div>
-    <div *ngIf="play.$key == 6" class="panel panel-default">
-      <a (click)="goToDetailPage(play)">Run</a>
-    </div>
-  </div>
-</div> -->
-<!--
-<div *ngIf="(playToDisplay | async)?.pass != undefined">
-  <div *ngFor="let play of plays | async">
-    <div *ngIf="play.$key == 2" class="panel panel-default">
-      <a (click)="goToDetailPage(play)">Pass</a>
-    </div>
-    <div *ngIf="play.$key == 5" class="panel panel-default">
-      <a (click)="goToDetailPage(play)">Run</a>
-    </div>
-  </div>
-</div>
-
-<div *ngIf="(playToDisplay | async)?.run != undefined">
-  <div *ngFor="let play of plays | async">
-    <div *ngIf="play.$key == 3" class="panel panel-default">
-      <a (click)="goToDetailPage(play)">Pass</a>
-    </div>
-    <div *ngIf="play.$key == 1" class="panel panel-default">
-      <a (click)="goToDetailPage(play)">Run</a>
-    </div>
-  </div>
-</div>
-
-<div *ngIf="(playToDisplay | async)?.pass != undefined">
-  <div *ngFor="let play of plays | async">
-    <div *ngIf="play.$key == 2" class="panel panel-default">
-      <a (click)="goToDetailPage(play)">Pass</a>
-    </div>
-    <div *ngIf="play.$key == 5" class="panel panel-default">
-      <a (click)="goToDetailPage(play)">Run</a>
-    </div>
-  </div>
-</div> -->

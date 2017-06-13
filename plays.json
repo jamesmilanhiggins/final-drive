@@ -50,6 +50,12 @@
     }, {
     "pass": "Pass complete for 29 yards, 1st and goal",
     "yardsToTouchdown": "1"
+    }, {
+      "pass": "INTERCEPTION!!! YOU LOST THE SUPER BOWL! THE BEAST WAS HUNGRY AND HE WAS NOT FED",
+      "yardsToTouchdown": "Doesn't matter"
+    }, {
+      "run": "BEASTMODE RUNS FOR A TOUCHDOWN!!! YOU WON THE SUPERBOWL! YAY",
+      "yardsToTouchdown": "Doesn't matter!"
     }
 ]
 }

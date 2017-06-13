@@ -1,0 +1,102 @@
+<h2>Fourth Play!</h2>
+<p>
+  The result of the third play lead to: {{(playToDisplay | async)?.run}} {{(playToDisplay | async)?.pass}}
+</p>
+
+<div *ngIf="(playToDisplay | async)?.run != undefined">
+  <p>Yards to touchdown: {{(playToDisplay | async)?.yardsToTouchdown}}</p>
+</div>
+<div *ngIf="(playToDisplay | async)?.pass != undefined">
+  <p>Yards to touchdown: {{(playToDisplay | async)?.yardsToTouchdown}}</p>
+</div>
+
+<h3>What will you do on your next play?</h3>
+
+
+<div *ngIf="(playToDisplay | async)?.$key == 10">
+  <div *ngFor="let play of plays | async">
+    <div *ngIf="play.$key == 14" class="panel panel-default">
+      <a (click)="goToDetailPage(play)">Pass</a>
+    </div>
+    <div *ngIf="play.$key == 15" class="panel panel-default">
+      <a (click)="goToDetailPage(play)">Run</a>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="(playToDisplay | async)?.$key == 6">
+  <div *ngFor="let play of plays | async">
+    <div *ngIf="play.$key == 14" class="panel panel-default">
+      <a (click)="goToDetailPage(play)">Pass</a>
+    </div>
+    <div *ngIf="play.$key == 15" class="panel panel-default">
+      <a (click)="goToDetailPage(play)">Run</a>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="(playToDisplay | async)?.$key == 11">
+  <div *ngFor="let play of plays | async">
+    <div *ngIf="play.$key == 14" class="panel panel-default">
+      <a (click)="goToDetailPage(play)">Pass</a>
+    </div>
+    <div *ngIf="play.$key == 15" class="panel panel-default">
+      <a (click)="goToDetailPage(play)">Run</a>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="(playToDisplay | async)?.$key == 7">
+  <div *ngFor="let play of plays | async">
+    <div *ngIf="play.$key == 14" class="panel panel-default">
+      <a (click)="goToDetailPage(play)">Pass</a>
+    </div>
+    <div *ngIf="play.$key == 15" class="panel panel-default">
+      <a (click)="goToDetailPage(play)">Run</a>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="(playToDisplay | async)?.$key == 12">
+  <div *ngFor="let play of plays | async">
+    <div *ngIf="play.$key == 14" class="panel panel-default">
+      <a (click)="goToDetailPage(play)">Pass</a>
+    </div>
+    <div *ngIf="play.$key == 15" class="panel panel-default">
+      <a (click)="goToDetailPage(play)">Run</a>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="(playToDisplay | async)?.$key == 8">
+  <div *ngFor="let play of plays | async">
+    <div *ngIf="play.$key == 14" class="panel panel-default">
+      <a (click)="goToDetailPage(play)">Pass</a>
+    </div>
+    <div *ngIf="play.$key == 15" class="panel panel-default">
+      <a (click)="goToDetailPage(play)">Run</a>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="(playToDisplay | async)?.$key == 13">
+  <div *ngFor="let play of plays | async">
+    <div *ngIf="play.$key == 14" class="panel panel-default">
+      <a (click)="goToDetailPage(play)">Pass</a>
+    </div>
+    <div *ngIf="play.$key == 15" class="panel panel-default">
+      <a (click)="goToDetailPage(play)">Run</a>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="(playToDisplay | async)?.$key == 9">
+  <div *ngFor="let play of plays | async">
+    <div *ngIf="play.$key == 14" class="panel panel-default">
+      <a (click)="goToDetailPage(play)">Pass</a>
+    </div>
+    <div *ngIf="play.$key == 15" class="panel panel-default">
+      <a (click)="goToDetailPage(play)">Run</a>
+    </div>
+  </div>
+</div>

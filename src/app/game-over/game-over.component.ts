@@ -7,12 +7,12 @@ import { PlayService } from '../play.service';
 import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
-  selector: 'app-third-play',
-  templateUrl: './third-play.component.html',
-  styleUrls: ['./third-play.component.css'],
+  selector: 'app-game-over',
+  templateUrl: './game-over.component.html',
+  styleUrls: ['./game-over.component.css'],
   providers: [PlayService]
 })
-export class ThirdPlayComponent implements OnInit {
+export class GameOverComponent implements OnInit {
   playId: string;
   playToDisplay;
   plays: FirebaseListObservable<any[]>;
@@ -34,8 +34,7 @@ export class ThirdPlayComponent implements OnInit {
   }
 
   goToDetailPage(clickedPlay) {
-    console.log(clickedPlay);
-    this.router.navigate(['third-play', clickedPlay.$key]);
+    this.router.navigate(['game-over', clickedPlay.$key]);
   };
 
 }

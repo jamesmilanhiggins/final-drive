@@ -1,0 +1,11 @@
+<h2>Game Over!</h2>
+<div *ngIf="(playToDisplay | async)?.run != undefined">
+  <p>Yards to touchdown: {{(playToDisplay | async)?.yardsToTouchdown}}</p>
+</div>
+<div *ngIf="(playToDisplay | async)?.pass != undefined">
+  <p>Yards to touchdown: {{(playToDisplay | async)?.yardsToTouchdown}}</p>
+</div>
+
+<p>
+  The result of the first play lead to: {{(playToDisplay | async)?.run}} {{(playToDisplay | async)?.pass}}
+</p>
