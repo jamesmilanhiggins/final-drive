@@ -1,22 +1,22 @@
 { "plays": [{
-    "run": "Gain 5 yards, 2nd and five",
-    "yards-to-touchdown": 75
+    "run": "Gain 20 yards, 1st down",
+    "yardsToTouchdown": "55"
     }, {
-    "run": "Gain 10 yards, new 1st down",
-    "yards-to-touchdown": 70
+    "run": "Run play to gain 25 yards, 1st down",
+    "yardsToTouchdown": "30"
 
     }, {
-    "run": "Gain 12 yards, new 1st down",
-    "yards-to-touchdown": 65
+    "run": "Gain 15 yards, new 1st down",
+    "yardsToTouchdown": "30"
 
     }, {
-    "pass": "Gain 10 yards, new first down",
-    "yards-to-touchdown": 75
+    "pass": "Gain 30 yards, new 1st down",
+    "yardsToTouchdown": "45"
     }, {
-    "pass": "Interception, you lost the super bowl.",
-    "yards-to-touchdown": 70
+    "pass": "Pass complete, gain 30 yards, 1st down.",
+    "yardsToTouchdown": "25"
     }, {
     "pass": "Incomplete pass, 2nd and ten.",
-    "yards-to-touchdown": 65
+    "yardsToTouchdown": "45"
   }]
 }

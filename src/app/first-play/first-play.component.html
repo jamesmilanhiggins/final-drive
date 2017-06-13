@@ -1,8 +1,9 @@
 <h2>First Play!</h2>
+<p>Yards to Touchdown: 75</p>
 
 <div *ngFor="let play of plays | async">
   <!-- <h1>{{play.$key}}</h1> -->
-  <div *ngIf="play.$key == 4" class="panel panel-default">
+  <div *ngIf="play.$key == 3" class="panel panel-default">
     <a (click)="goToDetailPage(play)">Pass</a>
   </div>
   <div *ngIf="play.$key == 0" class="panel panel-default">

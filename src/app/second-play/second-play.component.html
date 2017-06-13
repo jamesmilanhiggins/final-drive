@@ -1,4 +1,10 @@
 <h2>Second Play!</h2>
+<div *ngIf="(playToDisplay | async)?.run != undefined">
+  <p>Yards to touchdown: {{(playToDisplay | async)?.yardsToTouchdown}}</p>
+</div>
+<div *ngIf="(playToDisplay | async)?.pass != undefined">
+  <p>Yards to touchdown: {{(playToDisplay | async)?.yardsToTouchdown}}</p>
+</div>
 
 <p>
   The result of the first play lead to: {{(playToDisplay | async)?.run}} {{(playToDisplay | async)?.pass}}
@@ -8,7 +14,7 @@
 
 <div *ngIf="(playToDisplay | async)?.run != undefined">
   <div *ngFor="let play of plays | async">
-    <div *ngIf="play.$key == 3" class="panel panel-default">
+    <div *ngIf="play.$key == 4" class="panel panel-default">
       <a (click)="goToDetailPage(play)">Pass</a>
     </div>
     <div *ngIf="play.$key == 1" class="panel panel-default">
@@ -19,10 +25,10 @@
 
 <div *ngIf="(playToDisplay | async)?.pass != undefined">
   <div *ngFor="let play of plays | async">
-    <div *ngIf="play.$key == 2" class="panel panel-default">
+    <div *ngIf="play.$key == 5" class="panel panel-default">
       <a (click)="goToDetailPage(play)">Pass</a>
     </div>
-    <div *ngIf="play.$key == 5" class="panel panel-default">
+    <div *ngIf="play.$key == 2" class="panel panel-default">
       <a (click)="goToDetailPage(play)">Run</a>
     </div>
   </div>

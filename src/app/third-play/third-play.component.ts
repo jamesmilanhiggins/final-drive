@@ -32,4 +32,9 @@ export class ThirdPlayComponent implements OnInit {
     this.playToDisplay = this.playService.getPlayById(this.playId);
   }
 
+  goToDetailPage(clickedPlay) {
+    // console.log(clickedPlay);
+    this.router.navigate(['plays', clickedPlay.$key]);
+  };
+
 }

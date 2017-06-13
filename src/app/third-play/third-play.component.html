@@ -1,3 +1,36 @@
+<h2>Third Play!</h2>
+<div *ngIf="(playToDisplay | async)?.run != undefined">
+  <p>Yards to touchdown: {{(playToDisplay | async)?.yardsToTouchdown}}</p>
+</div>
+<div *ngIf="(playToDisplay | async)?.pass != undefined">
+  <p>Yards to touchdown: {{(playToDisplay | async)?.yardsToTouchdown}}</p>
+</div>
+
+
 <p>
-  third-play works!
+  The result of the second play lead to: {{(playToDisplay | async)?.run}} {{(playToDisplay | async)?.pass}}
 </p>
+<h3>What will you do on your next play?</h3>
+
+
+<!-- <div *ngIf="(playToDisplay | async)?.run != undefined">
+  <div *ngFor="let play of plays | async">
+    <div *ngIf="play.$key == 3" class="panel panel-default">
+      <a (click)="goToDetailPage(play)">Pass</a>
+    </div>
+    <div *ngIf="play.$key == 1" class="panel panel-default">
+      <a (click)="goToDetailPage(play)">Run</a>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="(playToDisplay | async)?.pass != undefined">
+  <div *ngFor="let play of plays | async">
+    <div *ngIf="play.$key == 2" class="panel panel-default">
+      <a (click)="goToDetailPage(play)">Pass</a>
+    </div>
+    <div *ngIf="play.$key == 5" class="panel panel-default">
+      <a (click)="goToDetailPage(play)">Run</a>
+    </div>
+  </div>
+</div> -->
