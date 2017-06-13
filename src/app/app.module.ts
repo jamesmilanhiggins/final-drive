@@ -9,6 +9,7 @@ import { FirstPlayComponent } from './first-play/first-play.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { ThirdPlayComponent } from './third-play/third-play.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -21,7 +22,8 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     SecondPlayComponent,
-    FirstPlayComponent
+    FirstPlayComponent,
+    ThirdPlayComponent
   ],
   imports: [
     BrowserModule,

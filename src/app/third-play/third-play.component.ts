@@ -7,12 +7,12 @@ import { PlayService } from '../play.service';
 import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
-  selector: 'app-second-play',
-  templateUrl: './second-play.component.html',
-  styleUrls: ['./second-play.component.css'],
+  selector: 'app-third-play',
+  templateUrl: './third-play.component.html',
+  styleUrls: ['./third-play.component.css'],
   providers: [PlayService]
 })
-export class SecondPlayComponent implements OnInit {
+export class ThirdPlayComponent implements OnInit {
   playId: string;
   playToDisplay;
   plays: FirebaseListObservable<any[]>;
@@ -30,7 +30,6 @@ export class SecondPlayComponent implements OnInit {
       this.playId = urlParameters['id'];
     });
     this.playToDisplay = this.playService.getPlayById(this.playId);
-    this.plays = this.playService.getPlays();
   }
 
 }

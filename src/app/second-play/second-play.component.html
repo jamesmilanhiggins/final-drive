@@ -1,7 +1,29 @@
+<h2>Second Play!</h2>
+
 <p>
-  second-play works!
+  The result of the first play lead to: {{(playToDisplay | async)?.run}} {{(playToDisplay | async)?.pass}}
 </p>
+<h3>What will you do on your next play?</h3>
 
 
-<a id='pass' routerLink="">Pass</a>
-<a id='run' routerLink="">Run</a>
+<div *ngIf="(playToDisplay | async)?.run != undefined">
+  <div *ngFor="let play of plays | async">
+    <div *ngIf="play.$key == 3" class="panel panel-default">
+      <a (click)="goToDetailPage(play)">Pass</a>
+    </div>
+    <div *ngIf="play.$key == 1" class="panel panel-default">
+      <a (click)="goToDetailPage(play)">Run</a>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="(playToDisplay | async)?.pass != undefined">
+  <div *ngFor="let play of plays | async">
+    <div *ngIf="play.$key == 2" class="panel panel-default">
+      <a (click)="goToDetailPage(play)">Pass</a>
+    </div>
+    <div *ngIf="play.$key == 5" class="panel panel-default">
+      <a (click)="goToDetailPage(play)">Run</a>
+    </div>
+  </div>
+</div>
