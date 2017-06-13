@@ -4,10 +4,10 @@
     }, {
     "run": "Run play to gain 25 yards, 1st down",
     "yardsToTouchdown": "30"
-
     }, {
     "run": "Gain 15 yards, new 1st down",
     "yardsToTouchdown": "30"
+
 
     }, {
     "pass": "Gain 30 yards, new 1st down",
@@ -18,5 +18,38 @@
     }, {
     "pass": "Incomplete pass, 2nd and ten.",
     "yardsToTouchdown": "45"
-  }]
+    },
+
+
+    {
+    "run": "Gain 20 yards, 1st down",
+    "yardsToTouchdown": "25"
+    }, {
+    "run": "Run play to loss of 15 yards, 2nd down",
+    "yardsToTouchdown": "45"
+
+    }, {
+    "run": "Gain 24 yards,  1st and goal",
+    "yardsToTouchdown": "1"
+
+    }, {
+    "run": "Run play for 29 yards, 1st and goal",
+    "yardsToTouchdown": "1"
+
+    },
+
+    {
+    "pass": "Pass complete for 44 yards, 1st and goal",
+    "yardsToTouchdown": "1"
+    }, {
+    "pass": "Pass complete for 29 yards, 1st and goal",
+    "yardsToTouchdown": "1"
+    }, {
+    "pass": "Pass complete for 24 yards, 1st and goal",
+    "yardsToTouchdown": "1"
+    }, {
+    "pass": "Pass complete for 29 yards, 1st and goal",
+    "yardsToTouchdown": "1"
+    }
+]
 }

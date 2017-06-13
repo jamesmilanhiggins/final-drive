@@ -34,7 +34,7 @@ export class SecondPlayComponent implements OnInit {
   }
 
   goToDetailPage(clickedPlay) {
-    console.log(clickedPlay);
+    // console.log(clickedPlay);
     this.router.navigate(['second-play', clickedPlay.$key]);
   };
 
