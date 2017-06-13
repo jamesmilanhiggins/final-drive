@@ -21,6 +21,7 @@ export class FirstPlayComponent implements OnInit {
   }
 
   goToDetailPage(clickedPlay) {
+    console.log(clickedPlay);
     this.router.navigate(['plays', clickedPlay.$key])
   };
 

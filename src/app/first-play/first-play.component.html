@@ -1,5 +1,14 @@
 <p>
   first-play works!
 </p>
-<a id='pass' routerLink="second-play">Pass</a>
-<a id='run' routerLink="second-play">Run</a>
+
+<div *ngFor="let play of plays | async">
+  <!-- <h1>{{play.$key}}</h1> -->
+  <div *ngIf="play.$key == 0" class="panel panel-default">
+    <a (click)="goToDetailPage(play.pass)">Pass</a>
+  </div>
+  <div *ngIf="play.$key == 0" class="panel panel-default">
+    <a (click)="goToDetailPage(play.run)">Run</a>
+  </div>
+
+</div>
