@@ -4,11 +4,11 @@
 
 <div *ngFor="let play of plays | async">
   <!-- <h1>{{play.$key}}</h1> -->
-  <div *ngIf="play.$key == 0" class="panel panel-default">
-    <a (click)="goToDetailPage(play.pass)">Pass</a>
+  <div *ngIf="play.$key == 4" class="panel panel-default">
+    <a (click)="goToDetailPage(play)">Pass</a>
   </div>
   <div *ngIf="play.$key == 0" class="panel panel-default">
-    <a (click)="goToDetailPage(play.run)">Run</a>
+    <a (click)="goToDetailPage(play)">Run</a>
   </div>
 
 </div>

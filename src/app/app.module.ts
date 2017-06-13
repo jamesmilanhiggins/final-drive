@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { SecondPlayComponent } from './second-play/second-play.component';
@@ -23,6 +25,8 @@ export const firebaseConfig = {
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule

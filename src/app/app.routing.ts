@@ -9,7 +9,7 @@ const appRoutes: Routes = [
     component: FirstPlayComponent
   },
   {
-    path:'second-play',
+    path: 'plays/:id',
     component: SecondPlayComponent
   }
 ];
